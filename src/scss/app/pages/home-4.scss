@@ -1,0 +1,274 @@
+
+.nav-inr-2{
+    background: #000000;
+    position: relative;
+    overflow: hidden;
+    .cube-1{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+        .cub-inr{
+        }
+    }
+    .sphere-1{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+        .sphere-inr{}
+    }
+    .anda{
+        position: absolute;
+        width: 391;
+        height: 391;
+        right: 50%;
+        z-index: 0;
+        transform: translateX(50%);
+        top: -195.5px;
+        border-radius: 100%;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.8;
+filter: blur(225px);
+    }
+    .container-fluid{
+        .inner-header {
+            background-size: cover;
+            padding: 70px 0px;
+            text-align: center;
+            .wrapper {
+                .heading-h2{
+                    color: #FFFFFF;
+                    z-index: 1;
+                }
+
+            }
+        }
+    }
+}
+
+.tabs-3{
+    margin: 112px 0px;
+    .container-fluid{
+        max-width: 892px;
+        padding: 0px;
+        .h2-head{
+            color: $White;
+            text-align: center;
+        }
+
+        .row-custom-2 {
+
+            .art-otr-2 {
+                .ul-item {
+                    border-bottom: none;
+                    justify-content: center;
+                    margin-bottom: 55px;
+                    gap: 15px 0px;
+                    padding: 0px 180px;
+                    .li-item {
+                        &:not(:last-child) {
+                            margin-right: 16px;
+                        }
+
+                        .nav-link.active {
+                            background-color: #F9C80E;
+                            color: black;
+                        }
+
+                        .button {
+                            border: 1px solid transparent;
+                            border-radius: 5px;
+                            color: #F9C80E;
+                            background-color: rgba(75, 60, 4, 0.5);
+                            border-radius: 4px;
+                            
+                            transition: .4s;
+                            
+                        }
+                    }
+                }
+
+                .tabb {
+                    .tabb1 {
+                        .help {
+                            .container {
+                                padding-bottom: 56px;
+                        
+                                .row-helper {
+                                    .accordion {
+                                        .accordion-item {
+                                            background-color: transparent;
+                                            margin-bottom: 24px;
+                                            .accordion-header {
+                                                background-color:rgba(255, 255, 255, 0.1);
+                                                .accordion-button {
+                                                    background: rgba(255, 255, 255, 0.1);
+                                                    border-radius: 4px;
+                                                    padding: 12px 24px;
+                                                    
+                                                    
+                                                    .icon-otr{
+                                                        margin-right: 16px;
+                                                        background: #F9C80E;
+                                                        border-radius: 4px;
+                                                        height: 40px;
+                                                        width: 40px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        .icon1{
+                                                            height: 20px;
+                                                            width: 18px;
+                                                        }
+                                                    }
+                                                    .heading{
+                                                        color: $White;
+                                                    }
+                                                    &:not(.collapsed) {
+                                                        background: rgba(255, 255, 255, 0.1);
+                                                        border-radius: 4px 4px 0px 0px;
+                                                    }
+                        
+                                                    &::after {
+                                                        background-image: url("/assets/img/plus.png");
+                                                        color: white;
+                                                        margin-right: 22px;
+                                                    }
+                        
+                                                    &:not(.collapsed)::after {
+                                                        background-image: url("/assets/img/divide.png");
+                                                        color: white;
+                                                    }
+                        
+                                                    &:focus {
+                                                        box-shadow: none;
+                                                        outline: none;
+                                                    }
+                        
+                                                }
+                                                
+                                            }
+                        
+                                            .collapse {
+                                                background: rgba(255, 255, 255, 0.1);
+                                                box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+                                                border-radius: 4px;
+                                                .accordion-body {
+                                                    color: #FFFFFF;
+                                                    font-size: 18px;
+                                                    line-height: 32px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lower-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .head-lb{
+                color: $White;
+                margin-right: 24px;
+            }
+            .action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .btn-inr{
+
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// .help {
+//     .container {
+//         padding-bottom: 100px;
+
+//         .row-helper {
+//             .accordion {
+//                 .accordion-item {
+//                     background-color: transparent;
+//                     margin-bottom: 24px;
+//                     .accordion-header {
+//                         background-color:rgba(255, 255, 255, 0.1);
+//                         .accordion-button {
+//                             background: rgba(255, 255, 255, 0.1);
+//                             border-radius: 4px;
+//                             padding: 12px 24px;
+                            
+                            
+//                             .icon-otr{
+//                                 margin-right: 16px;
+//                                 background: #F9C80E;
+//                                 border-radius: 4px;
+//                                 height: 40px;
+//                                 width: 40px;
+//                                 display: flex;
+//                                 justify-content: center;
+//                                 align-items: center;
+//                                 .icon1{
+//                                     height: 20px;
+//                                     width: 18px;
+//                                 }
+//                             }
+//                             .heading{
+//                                 color: $White;
+//                             }
+//                             &:not(.collapsed) {
+//                                 background: rgba(255, 255, 255, 0.1);
+//                                 border-radius: 4px 4px 0px 0px;
+//                             }
+
+//                             &::after {
+//                                 background-image: url("/assets/img/plus.png");
+//                                 color: white;
+//                                 margin-right: 22px;
+//                             }
+
+//                             &:not(.collapsed)::after {
+//                                 background-image: url("/assets/img/divide.png");
+//                                 color: white;
+//                             }
+
+//                             &:focus {
+//                                 box-shadow: none;
+//                                 outline: none;
+//                             }
+
+//                         }
+                        
+//                     }
+
+//                     .collapse {
+//                         background: rgba(255, 255, 255, 0.1);
+//                         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+//                         border-radius: 4px;
+//                         .accordion-body {
+//                             color: #FFFFFF;
+//                             font-size: 18px;
+//                             line-height: 32px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

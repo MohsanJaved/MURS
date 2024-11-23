@@ -1,0 +1,136 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    @include breakpoint($secreen-max-sm){
+        br{
+            display: none;
+        }
+    }
+}
+.container-fluid{
+    padding: 0px 45px;
+}
+
+.heading-S-OR{
+    font-size: $Font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Roboto-Medium;
+}
+.heading-H1{
+    font-size: $Font-size-80px;
+    line-height: $line-height-100px;
+    font-family: $font-family-Orbitron-Bold;
+    @include breakpoint ($secreen-max-md){
+        font-size: $Font-size-40px;
+        line-height: $line-height-56px;
+    }
+    
+}
+
+.heading-H2{
+   font-size: $Font-size-40px;
+   line-height: $line-height-56px;
+   font-family: $font-family-Orbitron-SemiBold;
+   @include breakpoint($secreen-max-md){
+    font-size: $Font-size-24px;
+    line-height: $line-height-36px;
+   }
+}
+.heading-L-P{
+    font-size: $Font-size-20px;
+    line-height: $line-height-36px;
+    font-family: $font-family-Poppins-Regular;
+}
+.headding-M-P{
+    font-size: $Font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $font-family-Poppins-Regular;
+}
+.heading-MD-P{
+    font-size: $Font-size-18px;
+    line-height: $line-height-32px;
+    font-family: $font-family-Poppins-SemiBold;
+}
+
+.heading-H3-OB{
+    font-size: $Font-size-24px;
+    line-height: $line-height-36px;
+    font-family: $font-family-Orbitron-SemiBold;
+    @include breakpoint($secreen-max-md){
+        font-size: $Font-size-20px;
+        line-height: $line-height-28px;
+    }
+
+}
+.heading-S-P{
+    font-size: $Font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Poppins-Regular;
+}
+.heading-SB-P{
+    font-size: $Font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Poppins-SemiBold;
+}
+.heading-SB-OR{
+    font-size: $Font-size-16px;
+    line-height: $line-height-28px;
+    font-family: $font-family-Orbitron-SemiBold;
+}
+
+.heading-XXSB-or{
+    font-size: $Font-size-12px;
+    line-height: $line-height-22px;
+    font-family: $font-family-Orbitron-Bold;
+}
+.heading-XSB-P{
+    font-size: $Font-size-14px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Poppins-SemiBold;
+}
+.heading-XS-P{
+    font-size: $Font-size-14px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Poppins-Regular;
+}
+
+
+.primary-BTN{
+    padding: 12px 24px;
+    background: rgba(75, 60, 4, 0.5);
+    border-radius: 4px;
+    color: #F9C80E;
+    &:hover{
+        background-color: #F9C80E;
+        color: black;
+
+    }
+}

@@ -1,0 +1,2109 @@
+body{
+    background-color:  #1E1E1E;
+}
+
+
+
+
+.nav-bar{
+    .container-fluid{
+        @include breakpoint($secreen-max-md){
+            padding: 0px 22px;
+        }
+        @include breakpoint($secreen-xxs){
+            padding: 0px;
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0px;
+            
+            .burger-logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .burger-btn{
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 100%;
+                    border: none;
+                    margin-right: 10px;
+                    @include breakpoint($secreen-max-md){
+                       display: flex;
+                    }
+                     display: none;
+                    .icon{
+                        color: $White;
+                        font-size: 28px;
+                    }
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                
+                .body-can{
+                    background-color:  #1E1E1E;
+                    .off-body{
+                        .upper{
+                            padding: 12px;
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            .img-otr1{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .img{}
+                            }
+                            .icon-otr2{
+                                position: relative;
+                                z-index: 1;
+                                &:hover{
+                                    .icon{
+                                        background-color: black;
+                                        color: white;
+                                    }
+                                }
+                               
+                                
+                                .icon{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    height: 40px;
+                                    width: 40px;
+                                    top: -8px;
+                                    left: -10px;
+                                    font-size: 26px;
+                                    position: absolute;
+                                    transition: .4s;
+                                    cursor: pointer;
+                                    border-radius: 100%;
+                                    border: 1px solid transparent;
+                                    background-color: $White;
+                                    z-index: 9999;
+                                    
+                                }
+                            }
+                        }
+                        .accordion {
+                            margin-top: 25px;
+                            .accordion-item {
+                                background-color: transparent;
+                               
+                                .accordion-header {
+                                    background-color:transparent;
+                                    .accordion-button {
+                                        background-color: transparent;
+                                        border-radius: 4px;
+                                        padding: 4px 24px;
+                                        color: $White;
+                                        
+                                        
+                                        
+                                        &:not(.collapsed) {
+                                            background: none;
+                                            border-radius: 4px 4px 0px 0px;
+                                        }
+            
+                                        &::after {
+                                           
+                                            display: none;
+                                        }
+            
+                                        &:not(.collapsed)::after {
+                                           
+                                            display: none;
+                                        }
+            
+                                        &:focus {
+                                            box-shadow: none;
+                                            outline: none;
+                                        }
+            
+                                    }
+                                    
+                                }
+                                .accordion-collapse {
+                                    max-width: 220px;
+                                    color: #FFFFFF;
+                                    padding: 0 !important;
+                                    .ul-drop{
+                                       
+                                        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1) !important;
+                                        border-radius: 4px !important;
+                                        padding: 12px 0px !important;
+                                        
+                                        .li-drop{
+                                            display: flex;
+                                            justify-content: center;
+                                            &:not(:last-child){
+                                                margin-bottom: 10px;
+                                            }
+                                            .a-drop{
+                                                color: $White !important;
+                                                text-decoration: none;
+                                                list-style: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                // .collapse {
+                                //     max-width: 200px;
+                                    
+            
+                                   
+                                // }
+                            }
+                        }
+                        .lower{
+                            margin-left: 12px;
+                            margin-top: 12px;
+                            .head{
+                                color: $White;
+                                margin-bottom: 20px;
+                            }
+                            .ul-social{
+                                display: flex;
+                                gap: 10px 14px;
+                                flex-wrap: wrap;
+                                .li-social{
+                                    // &:not(:last-child){
+                                    // margin-right: 24px;
+                                    // }
+                                    .a-social{
+                                        width: 50px;
+                                        height: 50px;
+                                        background-color: #FFFFFF;
+                                        border-radius: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        transition: .4s;
+                                        &:hover{
+                                            background-color: #F9C80E;
+                                            .icon-social{
+                                                color: white;
+                                            }
+                                        }
+                                        .icon-social{
+                                            font-size: 22px;
+                                            color: #000000;
+                                            transition: .4s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                  
+                }
+                .img-otr {
+                    
+                    .img {}
+                }
+            }
+           
+            .left{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .ul-item {
+                    @include breakpoint($secreen-max-md){
+                        display: none;
+                     }
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0px;
+                    margin-right: 24px;
+                    .li-item{
+                        text-decoration: none;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        &:not(:last-child) {
+                            margin-right: 40px;
+                        }
+                       &:hover{
+                        .drop-item{
+                            visibility: visible;
+                            opacity: 1;
+                            top: 65px;
+                        }
+                        .small-icon{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                        .a-item {
+                            color: #FFFFFF;
+                        }
+                       }
+                       .small-icon{
+                        width: 14px;
+                        height: 14px;
+                        visibility: hidden;
+                        opacity: 0;
+                       }
+                        .a-item {
+                            padding-left: 5px;
+                            cursor: pointer;
+                            color: rgba(255, 255, 255, 0.45);
+                            text-decoration: none;
+                            transition: .4s;
+                            text-align: center;
+                            position: relative;
+                            margin-bottom: 0px!important;
+                            z-index: 9999;
+                            font-family: $font-family-Poppins-Regular;
+    
+                            &:hover{
+                                color: #FFFFFF;
+                            }
+                        }
+                        .drop-item{
+                            Position: absolute;
+                            width: 190px;
+                            visibility: hidden;
+                            opacity: 0;
+                            top: 200px;
+                            transition: 0.4s;
+                            z-index: 1;
+                            .small-box{
+                                background-color: black;
+                                width: 16px;
+                                height: 24px;
+                                position: absolute;
+                                
+                                transform: rotate(45deg);
+                                z-index: 9999;
+                                border-radius: 3px;
+                                right: 147px;
+                                top: -9px;
+                            }
+                           
+                            .ul-drop{
+                                padding: 12px 14px;
+                                background-color: black;
+                                border-radius: 4px;
+                                .li-drop{
+                                    &:not(:last-child){
+                                        margin-bottom: 8px;
+                                    }
+                                    .a-drop{
+                                        color: white; 
+                                        margin-bottom: 0px;
+                                    }
+                                    .a-drop1{
+                                        color: white;
+                                        position: relative;
+                                        cursor: pointer;
+                                        margin-bottom: 0px;
+                                        z-index: 1;
+                                    }
+                                    &:hover{
+                                        .other-drop{
+                                            visibility: visible;
+                                            opacity: 1;
+                                            top: 40px;
+                                        }
+                                        .arrow-2{
+                                            background-color: black;
+                                            width: 16px;
+                                            height: 24px;
+                                            position: absolute;
+                                            bottom: 50px;
+                                            transform: rotate(-45deg);
+                                            z-index: 0;
+                                            border-radius: 3px;
+                                            right: 176px;
+                                        }
+                                    }
+                                      
+                                    
+                                   .other-drop{
+                                    position: absolute;
+                                    width: 120px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    top: 150px;
+                                    transition: .4s;
+                                    left: -125px;
+                                    z-index: 9999;
+                                    .ul-2drop{
+                                        padding: 12px 14px;
+                                        background-color: black;
+                                        border-radius: 4px;
+                                       
+                                        .li-2drop{
+                                            &:not(:last-child){
+                                                margin-bottom: 8px;
+                                            }
+                                            .a-2drop{
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                   } 
+    
+                                }
+                            }
+                        }
+                    }
+                  
+                   
+                  
+                }
+                .media{
+                    display: flex;
+                    
+                    &:not(:last-child){
+                        margin-right: 22px;
+                    }
+                    .search{
+                        padding-left: 24px;
+                        border-left: 1px solid rgba(255, 255, 255, 0.45);
+                        @include breakpoint ($secreen-max-md){
+                            border-left: none;
+                        }
+                        .modal-btn{ 
+                            padding: 0;
+                            background-color: transparent;
+                            border: none;
+                            color: black;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                            
+                            box-shadow: none;
+                            font-size: 24px;
+                            outline: none;
+                            &:hover{
+                                box-shadow: none;
+                                background: none;
+                                color: black;
+                                border: none;
+                                outline: none;
+                            }
+                            &:focus{
+                                outline: none;
+                                color: black;
+                                background: none;
+                                border: none;
+                                box-shadow: none;
+                            }
+                        }
+                        .modal-main{
+                            z-index: 9999;
+                            .modal-dialog-main{
+                                max-width: 100%;
+                                .modal-content-main{
+                                    height: 100vh;
+                                    padding: 0px 100px;
+                                    .icon-otr{
+                                        top: 24px;
+                                        right: 24px;
+                                        z-index: 9999;
+                                        &:hover{
+                                            .icon{
+                                                background-color: black;
+                                                color: white;
+                                            }
+                                        }
+                                       
+                                        
+                                        .icon{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            height: 40px;
+                                            width: 40px;
+                                            position: absolute;
+                                            font-size: 26px;
+                                            top: 20px;
+                                            right: 25px;
+                                            // color: $black-4;
+                                            transition: .4s;
+                                            cursor: pointer;
+                                            border-radius: 100%;
+                                            border: 1px solid transparent;
+                                            background-color: blanchedalmond;
+                                        }
+                                    }
+                                   
+                                    .modal-body-main{
+                                        .inr-body{
+                                            position: absolute;
+                                            width: 98%;
+                                            top: 50%;
+                                            transform: translateY(-75%);
+                                            .head{
+                                                margin-bottom: 20px;
+                                            }
+                                            .input-otr{
+                                                position: relative;
+                                                width: 100%;
+                                                .search-input{
+                                                    width: 100%;
+                                                    padding: 12px 56px 12px 24px;
+                                                    border: none;
+                                                    background-color: antiquewhite;
+                                                }
+                                                .search-icon{
+                                                    position: absolute;
+                                                    font-size: 24px;
+                                                    color: black;
+                                                    right: 24px;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                }
+                                            }
+                                           
+                                        }
+                                      
+                                    }
+                                }
+                            }
+                        }
+                    
+                       }
+                    
+                    
+                       .folder{
+                        margin: 0px 24px;
+                        .button{
+                            padding: 0;
+                            background-color: transparent;
+                            border: none;
+                            
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                           
+                            box-shadow: none;
+                            font-size: 25px;
+                            cursor: pointer;
+                        }
+                        .modal-otr{
+                            position: absolute;
+                            background-color: #000000;
+                            z-index: 9999;
+                            .modal-dialog-custom{
+                                position: relative;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                max-width: 663px;
+                                .modal-content-custom{
+                                    background-color: rgba(255, 255, 255, 0.1);
+                                    border: none;
+                                    .icon-otr{
+                                        top: 24px;
+                                        right: 24px;
+                                        z-index: 9999;
+                                        &:hover{
+                                            .icon{
+                                                background-color: black;
+                                                color: #FFFFFF;
+                                            }
+                                        }
+                                       
+                                        
+                                        .icon{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            height: 40px;
+                                            width: 40px;
+                                            position: absolute;
+                                            font-size: 36px;
+                                            top: 20px;
+                                            right: 25px;
+                                            color: #000000;
+                                            // color: $black-4;
+                                            transition: .4s;
+                                            cursor: pointer;
+                                            border-radius: 100%;
+                                            border: 1px solid transparent;
+                                            background-color: $White;
+                                        }
+                                    }
+                                    .modal-body-custom{
+                                        // padding: 0px;
+                                        overflow: hidden;
+                                        .folder-body{
+                                            position: relative;
+                                            .egg{
+                                                position: absolute;
+                                                background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+                                                opacity: 0.5;
+                                                filter: blur(225px);
+                                                border-radius: 100%;
+                                                height: 391px;
+                                                width: 391px;
+                                                z-index: 0;
+                                                left: -175px;
+                                            }
+                                            .wrapper{
+                                                text-align: center;
+                                                margin-top: 35px;
+                                                .heads{
+                                                    font-size: 35px;
+                                                    color: $White;
+                                                }
+                                                .para{
+                                                    padding: 15px 0px;
+                                                    color: $White-75;
+                                                    .bold{
+                                                        color: $White;
+                                                    }
+                                                }
+                                            }
+                                            .row-custom{
+                                                .folder-otr{
+                                                    text-align: center;
+                                                    .folder-in{
+                                                        position: relative;
+                                                        z-index: 1;
+                                                        background: rgba(255, 255, 255, 0.1);
+                                                        padding: 24px;
+                                                        border-radius: 4px;
+                                                        .icon-inr{
+                                                            font-size: 34px;
+                                                        }
+                                                        .head-4{
+                                                            padding: 12px 0px 21px 0px;
+                                                            color: $White;
+                                                        }
+                                                        .btn-otr{
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                            transition: .4s;
+                                                            margin-bottom: 15px;
+                                                            .btn-inr{
+                                                               
+                                                                padding: 7px 61px !important;
+                                                                margin-bottom: 18px;
+                                                                
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                           }
+                                    }
+                                }
+                            }
+                        }
+                       }
+                    
+                       .folder2{
+                        
+                        .button-1{
+                            padding: 0;
+                            background-color: transparent;
+                            border: none;
+                            color: black;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 auto;
+                           
+                            box-shadow: none;
+                            font-size: 25px;
+                            cursor: pointer;
+                        }
+                        .modal-otr{
+                            position: absolute;
+                            background-color: #000000;
+                            z-index: 9999;
+                            .modal-dialog-custom{
+                                transform: translateY(-50%);
+                                top: 50%;
+                                position: relative;
+                                max-width: 892px;
+    
+                                .modal-content-custom{
+                                    background-color: rgba(255, 255, 255, 0.1);
+                                    .icon-otr{
+                                        top: 24px;
+                                        right: 24px;
+                                        z-index: 9999;
+                                        &:hover{
+                                            .icon{
+                                                background-color: black;
+                                                color: white;
+                                            }
+                                        }
+                                       
+                                        
+                                        .icon{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            height: 40px;
+                                            width: 40px;
+                                            position: absolute;
+                                            font-size: 36px;
+                                            top: 20px;
+                                            right: 25px;
+                                            // color: $black-4;
+                                            transition: .4s;
+                                            cursor: pointer;
+                                            border-radius: 100%;
+                                            border: 1px solid transparent;
+                                            background-color: $White;
+                                            
+                                        }
+                                    }
+                                    .modal-body-custom{
+                                        // padding: 0px;
+                                        overflow: hidden;
+                                        .folder-body2{
+                                            position: relative;
+                                            .egg1{
+                                                position: absolute;
+                                                background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+                                                opacity: 0.5;
+                                                filter: blur(225px);
+                                                border-radius: 100%;
+                                                height: 391px;
+                                                width: 391px;
+                                                z-index: 0;
+                                                left: -175px;
+                                            }
+                                            .wrapper1{
+                                                text-align: center;
+                                                margin-top: 35px;
+                                                .heads1{
+                                                    color: $White;
+                                                }
+                                                .para1{
+                                                    color: $White-75;
+                                                    padding: 16px 0px 48px 0px;
+                                                }
+                                            }
+                                           .row-custom{
+                                            justify-content: center;
+                                            gap: 24px 0px;
+                                            position: relative;
+                                            z-index: 1;
+                                                .fol{
+                                                    .fol-inr{
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        align-items: center;
+                                                        background: rgba(255, 255, 255, 0.1);
+                                                        padding: 12px 16px;
+                                                        border-radius: 5px;
+                                                        transition: .4s;
+                                                        &:hover{
+                                                            background-color: #000000;
+                                                            
+                                                        }
+                                                        .img-otr1{
+                                                            height: 40px;
+                                                            width: 40px;
+                                                            
+                                                            background-color: $White;
+                                                            border-radius: 4px;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            .image{
+                                                            
+                                                                height: 18px;
+                                                                width: 18px;
+                                                                
+                                                            }
+                                                        }
+                                                        
+                                                        .head-4{
+                                                            margin-left: 5px;
+                                                            color: $White;
+                                                        }
+                                                    }
+                                                }
+                                           }
+                                           }
+                                    }
+                                }
+                            }
+                        }
+                       }
+                }
+            }
+           
+        }
+    }
+}
+
+
+.create{
+    .container{
+      .wrapper{
+          text-align: center;
+          .head-h4{
+              color: #F9C80E;
+              font-size: 18px;
+              line-height: 32px;
+          }
+          .heading-h2{
+              font-size: 40px;
+              line-height: 56px;
+              color: #FFFFFF;
+              padding: 16px 0px 98px 0px;
+          }
+      }
+      .slider{
+        height: max-content;
+        .swiper-wrapper{
+            .swiper-slide{
+                .img-otr{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+      }
+      
+    }
+  }
+
+.hero-section {
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    .anda {
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.5;
+        filter: blur(225px);
+        border-radius: 100%;
+        bottom: 0;
+        left: -275px;
+        z-index: 0;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+
+    .anda1 {
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.5;
+        filter: blur(225px);
+        border-radius: 100%;
+        right: -275px;
+        top: -275px;
+        z-index: 0;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+
+    .anda2 {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        background: #FFFFFF;
+        opacity: 0.3;
+        filter: blur(225px);
+        border-radius: 100%;
+        bottom: -275px;
+        right: -275px;
+        z-index: 0;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+    .sphere {
+        position: absolute;
+        top: 443px;
+        left: 67px;
+        z-index: 0;
+        animation-name: transition2;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+
+    .cube {
+        position: absolute;
+        bottom: 287px;
+        right: 45px;
+        z-index: 0;
+        animation-name: transition1;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+    .container-fluid{
+       
+     
+        .wrapper {
+            text-align: center;
+
+            .head-h1 {
+                color: $White;
+                padding-top: 90px;
+            }
+
+            .detail {
+                color: $White-75;
+                padding: 32px 0px 44px 0px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .img-otr {
+                padding-bottom: 123px;
+
+                .img-inr {}
+            }
+        }
+    }
+}
+
+
+
+.company-logo {
+    margin: 112px auto;
+
+    @include breakpoint($secreen-max-md){
+    margin: 72px 0;
+}
+    .container-fluid{
+       
+
+        .row-custom {
+            text-align: center;
+            justify-content: center;
+            gap: 24px 0px;
+            flex-wrap: wrap;
+            .campany-logo-inr {
+                height: 150px;
+                // width: 320px;
+                border-radius: 4px;
+                background: rgba(255, 255, 255, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .img-logo-comant {}
+            }
+            .campany-logo-inr2 {
+                height: 150px;
+                // width: 320px;
+                border-radius: 4px;
+                background: rgba(249, 200, 14, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .img-logo-comant {}
+            }
+        }
+    }
+}
+
+
+
+
+
+.tabs-2 {
+
+    .container-fluid{
+        position: relative;
+        @include breakpoint($secreen-max-md){
+           padding: 0px 20px;
+        }
+        .cubr-2 {
+            position: absolute;
+            left: 46px;
+            @include breakpoint($secreen-max-md){
+                display: none;
+            }
+            .cubr-inr {}
+        }
+
+        .spheree {
+            position: absolute;
+            right: 46px;
+            top: 95px;
+            @include breakpoint($secreen-max-md){
+                display: none;
+            }
+            .img-spherr {}
+        }
+
+        
+
+        .wrapper {
+            text-align: center;
+
+            .head-md {
+                color: #F9C80E;
+                font-size: 18px;
+                line-height: 32px;
+            }
+
+            .heading {
+                display: flex;
+                justify-content: center;
+                padding: 16px 0px 35px 0px;
+
+                .main-head {
+                    font-size: 40px;
+                    line-height: 56px;
+                    color: #ffffff;
+                }
+
+                .icon-otr {
+                    .icon-inr {
+                        height: 56px;
+                        width: 56px;
+                    }
+                }
+            }
+        }
+
+        .row-custom-2 {
+
+            .art-otr-2 {
+                .ul-item {
+                    border-bottom: none;
+                    justify-content: center;
+                    margin-bottom: 55px;
+                    gap: 15px 0px;
+                    .li-item {
+                        &:not(:last-child) {
+                            margin-right: 16px;
+                        }
+
+                        .nav-link.active {
+                            background-color: #F9C80E;
+                            color: black;
+                        }
+
+                        .button {
+                            border: 1px solid transparent;
+                            border-radius: 5px;
+                            color: #F9C80E;
+                            background-color: rgba(75, 60, 4, 0.5);
+                            border-radius: 4px;
+                            
+                            transition: .4s;
+                            
+                        }
+                    }
+                }
+
+                .tabb {
+                    .tabb1 {
+                        .row-custom {
+                            @include breakpoint($secreen-max-md){
+                                justify-content: center;
+                            }
+                            .box-otr {
+                                &:not(:last-child) {
+                                    margin-bottom: 24px;
+                                }
+                
+                                .box-inr {
+                                    background: rgba(255, 255, 255, 0.1);
+                                    border: 1px solid #4B3C04;
+                                    border-radius: 4px;
+                                    position: relative;
+                                    overflow: hidden;
+                                    transition: .4s;
+                                    padding: 16px;
+                
+                                    .img-otr {
+                                        position: relative;
+                
+                                        .img-inr {
+                                            height: 280px;
+                                            width: 100%;
+                                            object-fit: cover;
+                                            transition: .4s;
+                                        }
+                
+                                        .iconss-otr {
+                                            position: absolute;
+                                            visibility: hidden;
+                                            opacity: 0;
+                                            height: 100%;
+                                            width: 100%;
+                                            top: 0px;
+                                            align-items: center;
+                                            justify-content: center;
+                                            display: flex;
+                                            background-color: rgba(0, 0, 0, 0.5);
+                                            backdrop-filter: blur(5px);
+                                            transition: .4s;
+                                           
+                                            .iconss-inr {
+                                                display: flex;
+                                                gap: 0px 10px;
+                
+                                                .li-iconss {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    height: 40px;
+                                                    background-color: white;
+                                                    width: 40px;
+                                                    border-radius: 100%;
+                
+                                                    .a-iconss {
+                                                        .iconss {
+                                                            font-size: 25px;
+                                                            color: #000000;
+                                                        }
+                                                    }
+                
+                                                    &:hover {
+                                                        background-color: #F9C80E;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                
+                                    &:hover {
+                                        padding: 16px 16px 68px 16px;
+                
+                                        .img-inr {
+                                            height: 228px;
+                                            object-fit: cover;
+                
+                                        }
+                
+                                        .BTN-OTR {
+                
+                                            opacity: 1;
+                                            visibility: visible;
+                                            bottom: 15px;
+                                        }
+                
+                                        .iconss-otr {
+                                            visibility: visible;
+                                            opacity: 1;
+                                        }
+                                    }
+                
+                                    .more {
+                                        padding: 15px 0px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                
+                                        .header {
+                                            color: #ffffff;
+                                           
+                                        }
+                
+                                        .more-icn {
+                                            color: #ffffff;
+                                        }
+                                    }
+                
+                                    .mail {
+                                        color: #ffffff;
+                                        
+                                    }
+                
+                                    .price {
+                                        padding: 15px 0px;
+                                        display: flex;
+                                        justify-content: space-between;
+                
+                                        .head-5 {
+                                            color: rgba(255, 255, 255, 0.45);
+                                
+                                        }
+                
+                                        .num {
+                                            color: #ffffff;
+                                            
+                                        }
+                                    }
+                
+                                    .BTN-OTR {
+                                        position: absolute;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        // top: 505px;
+                                        transition: .4s;
+                                        bottom: -50px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        width: 90%;
+                                        text-align: center;
+                                        height: 34px;
+                                        .btn-inr {
+                                            padding: 5px 14px !important;
+                                            border-radius: 7px;
+                                            width: 100%;
+                                            background-color: #ffffff;
+                                            color: black;
+                
+                                            &:hover {
+                                                background-color: #F9C80E;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.other-company {
+    .container-fluid{
+        .row-custom {
+            justify-content: space-between;
+            padding: 112px 0px;
+            @include breakpoint($secreen-max-md){
+                padding: 56px 0px;
+            }
+            .other-company-otr {
+               
+                .other-company-inr {
+                    .copmany-img {
+                        width: 100%;
+                        Height: 437px;
+                    }
+                }
+            }
+
+            .other-company-otr {
+                .other-company-inr1 {
+                    margin-left: 72px;
+                    .head-h2 {
+                        color: $White;
+                        margin-top: 50px;
+                    }
+
+                    .detail {
+                        color: $white-45;
+                        padding: 24px 0px 36px 0px;
+                    }
+
+                    .action {
+                        display: flex;
+                        align-items: center;
+
+                        .btn-inr {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.create {
+    .container-fluid{
+        .wrapper {
+            text-align: center;
+
+            .head-h4 {
+                color: #F9C80E;
+                font-size: 18px;
+                line-height: 32px;
+            }
+
+            .heading-h2 {
+                font-size: 40px;
+                line-height: 56px;
+                color: #FFFFFF;
+                padding: 16px 0px 98px 0px;
+            }
+        }
+
+        .row-custom {
+            gap: 50px 0px;
+            flex-wrap: wrap;
+            @include breakpoint($secreen-max-md){
+                justify-content: center;
+            }
+            .creater-otr {
+                position: relative;
+
+                .img-otr {
+                    position: absolute;
+                    right: 50%;
+                    transform: translateX(50%);
+                    top: -50px;
+
+                    .img-inr {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+
+                .creater-inr {
+                    border-radius: 4px;
+                    background-color: black;
+                    text-align: center;
+                    padding: 24px 28px;
+                    .head-h3 {
+                       
+                        color: #FFFFFF;
+                        padding-top: 46px;
+                    }
+
+                    .detail {
+                       
+                        color: rgba(255, 255, 255, 0.75);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-creator{
+    margin: 112px 0px;
+    @include breakpoint($secreen-max-md){
+        margin: 56px 0px;
+    }
+    .container-fluid{
+        @include breakpoint($secreen-xxs){
+            padding: 0px 10px;
+        }
+        .wapper{
+            text-align: center;
+            .h4-head{
+                color: $Primary-color;
+            }
+            .h2-head{
+                color: $White;
+                padding: 16px 0px 58px 0px;
+            }
+        }
+        .row-custom{
+            gap: 24px 0px;
+            @include breakpoint($secreen-max-md){
+                justify-content: center;
+            }
+            .top-otr{
+                .top-inr{
+                    background: rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    border-radius: 4px;
+                    
+                    align-items: center;
+                    .num-otr{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        background: rgba(75, 60, 4, 0.5);
+                        align-items: center;
+                        width: 20%;
+                        .num-h3{
+                            padding: 23px 19px;
+                            color: $Primary-color;
+                           
+                        }
+                    }
+                    .img-otr{
+                        display: flex;
+                        margin-left: 16px;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: space-between;
+                        .image-side{
+                            display: flex;
+                            align-items: center;
+                            .img-ot{
+                                position: relative;
+                                height: 65px;
+                                width: 66px;
+                                .img-inr{
+                                    border-radius: 4px;
+                                    border: 2px solid $White;
+                                }
+                                .icon-otr{
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: -4;
+                                    .icon{
+                                        background-color: $White;
+                                        border-radius: 100%;
+                                        border: 1px solid black;
+                                    }
+                                }
+                            }
+                           
+                            .del{
+                                margin-left: 16px;
+                                .head-sb{
+                                    color: $White;
+                                }
+                                .number{
+                                    color: $White-75;
+                                }
+                            }
+                        }
+                        .more-otr{
+                            margin-right: 16px;
+                            height: 30px;
+                            width: 30px;
+                            background: rgba(255, 255, 255, 0.1);
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // margin-left: 90px;
+                            .more-inr{
+                                color: $White;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+            .action{
+                display: flex;
+                justify-content: center;
+                margin-top: 68px;
+                .btn-inr{}
+            }
+        }
+    }
+}
+
+
+.artwork{
+    margin: 112px 0px;
+    @include breakpoint($secreen-max-md){
+        margin: 56px 0px;
+    }
+    .container-fluid{
+        @include breakpoint($secreen-max-md){
+            padding: 0px 20px;
+        }
+        .wrapper{
+            text-align: center;
+            .head-md{
+                color: $Primary-color;
+            }
+            .heading{
+                color: $White;
+                padding: 16px 0px 28px 0px;
+            }
+        }
+        .row-custom {
+            @include breakpoint($secreen-max-md){
+                justify-content: center;
+            }
+            .box-otr {
+                &:not(:last-child) {
+                    margin-bottom: 24px;
+                }
+
+                .box-inr {
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid #4B3C04;
+                    border-radius: 4px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: .4s;
+                    padding: 16px;
+
+                    .img-otr {
+                        position: relative;
+
+                        .img-inr {
+                            height: 280px;
+                            width: 100%;
+                            object-fit: cover;
+                            transition: .4s;
+                        }
+
+                        .iconss-otr {
+                            position: absolute;
+                            visibility: hidden;
+                            opacity: 0;
+                            height: 100%;
+                            width: 100%;
+                            top: 0px;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            backdrop-filter: blur(5px);
+                            transition: .4s;
+                           
+                            .iconss-inr {
+                                display: flex;
+                                gap: 0px 10px;
+
+                                .li-iconss {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 40px;
+                                    background-color: white;
+                                    width: 40px;
+                                    border-radius: 100%;
+
+                                    .a-iconss {
+                                        .iconss {
+                                            font-size: 25px;
+                                            color: #000000;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background-color: #F9C80E;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        padding: 16px 16px 68px 16px;
+
+                        .img-inr {
+                            height: 228px;
+                            object-fit: cover;
+
+                        }
+
+                        .BTN-OTR {
+
+                            opacity: 1;
+                            visibility: visible;
+                            bottom: 15px;
+                        }
+
+                        .iconss-otr {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+
+                    .more {
+                        padding: 15px 0px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .header {
+                            color: #ffffff;
+                           
+                        }
+
+                        .more-icn {
+                            color: #ffffff;
+                        }
+                    }
+
+                    .mail {
+                        color: #ffffff;
+                        
+                    }
+
+                    .price {
+                        padding: 15px 0px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .head-5 {
+                            color: rgba(255, 255, 255, 0.45);
+                
+                        }
+
+                        .num {
+                            color: #ffffff;
+                            
+                        }
+                    }
+
+                    .BTN-OTR {
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // top: 505px;
+                        transition: .4s;
+                        bottom: -50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        visibility: hidden;
+                        opacity: 0;
+                        width: 90%;
+                        text-align: center;
+                        height: 34px;
+                        .btn-inr {
+                            padding: 5px 14px !important;
+                            border-radius: 7px;
+                            width: 100%;
+                            background-color: #ffffff;
+                            color: black;
+
+                            &:hover {
+                                background-color: #F9C80E;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .action{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 68px;
+            .btn-inr{}
+        }
+    }
+}
+
+
+.journey{
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    margin: 127px 0px 113px 0px;
+    overflow: hidden;
+    .annda{
+        position: absolute;
+        height: 550px;
+        width: 550px;
+        left: -275px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.5;
+        filter: blur(225px);
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+    .annda1{
+        position: absolute;
+        height: 550px;
+        width: 550px;
+        right: -275px;
+        bottom: -275px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.5;
+        filter: blur(225px);
+        @include breakpoint($secreen-max-lg){
+            display: none;
+        
+        }
+    }
+    .container-fluid{
+        @include breakpoint($secreen-max-md){
+            padding: 0px 20px;
+        }
+        .row-custom{
+            padding: 72px 45px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px 0px;
+            @include breakpoint($secreen-max-sm){
+                padding: 32px 0px
+            }
+            .journey-otr{
+                .journey-inr{
+                    position: relative;
+                    .img-journey{
+                        position: absolute;
+                        height: 315px;
+                        width: 100%;
+                        z-index: 1;
+                        @include breakpoint($secreen-max-md){
+                            display: none;
+                            
+                        }
+                        
+                    }
+                    .sphere{
+                        position: absolute;
+                        left: -45px;
+                        top: -50px;
+                        z-index: 0;
+                        animation-name: rotate;
+                        animation-duration: 30s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                        @include breakpoint($secreen-max-lg){
+                            display: none;
+
+                        }
+                        .sphere-inr{}
+                    }
+                    .cube{
+                        position: absolute;
+                        right: -5px;
+                        top: 230px;
+                        animation-name: rotate1;
+                        animation-duration: 30s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        @include breakpoint($secreen-max-lg){
+                            display: none;
+
+                        }
+                        .cube-inr{}
+                    }
+                }
+            }
+            .journey-otr{
+                .journey-inr1{
+                    .heading{
+                        color: $White;
+                    }
+                    .head-5{
+                        color: $White-75;
+                        padding: 24px 0px 48px 0px;
+                    }
+                    .action{
+                        display: flex;
+                        align-items: center;
+                        
+                       
+                        .btn-1{
+                            margin-right: 24px;
+                            @include breakpoint($secreen-xs){
+                                margin-right: 14px;
+                            }
+                        }
+                        .btn-2{}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.latest-artical{
+    margin-bottom: 128px;
+    @include breakpoint($secreen-max-md){
+        margin-bottom: 64px;
+    }
+    .container-fluid{
+        @include breakpoint($secreen-max-md){
+            padding: 20px;
+        }
+        .wapper{
+            text-align: center;
+            .head{
+                color: $Primary-color;
+            }
+            .head-h2{
+                color: $White;
+                padding: 16px 0px 48px 0px;
+            }
+        }
+        .row-custom{
+            @include breakpoint($secreen-max-md){
+                justify-content: center;
+            }
+            flex-wrap: wrap;
+            gap: 20px 0px;
+            .latest-otr{
+                .latest-inr{
+                    background: rgba(255, 255, 255, 0.1);
+                    padding: 16px;
+                    border-radius: 4px;
+                    .coin-img-otr{
+                        .coin-inr{
+                            width: 383px;
+                            border-radius: 4px;
+                            width: 100%;
+                        }
+                    }
+                    .head-s{
+                        color: rgba(255, 255, 255, 0.45);
+                        padding-top: 16px;
+                    }
+                    .head-h3{
+                        color: $White;
+                        padding: 12px 0px 16px 0px;
+                    }
+                    .hea-s{
+                        color: $Primary-color;
+                        .spa-arrow{
+                            margin-left: 12px;
+                        }
+                    }
+                }
+                
+            }
+            .action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 68px;
+                .btn-inr{}
+            }
+        }
+    }
+}
+
+
+
+
+
+.section-footer{
+    position: relative;
+    overflow: hidden;
+    .after-1{
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.3;
+        filter: blur(225px);
+        border-radius: 100%;
+        // bottom: 420px;
+        z-index: 0;
+        left: 35%;
+        top: -275;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+    .after-2{
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.3;
+        filter: blur(225px);
+        border-radius: 100%;
+        bottom: -240px;
+        right: -290px;
+        z-index: 0;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+    .after-3{
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        background: linear-gradient(180deg, #4B3C04 0%, #FFFFFF 100%);
+        opacity: 0.3;
+        filter: blur(225px);
+        border-radius: 100%;
+        bottom: 90px;
+        z-index: 0;
+        left: -275px;
+        @include breakpoint($secreen-max-md){
+            display: none;
+        }
+    }
+    .circlr-otr{
+        .circlr-inr{
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include breakpoint($secreen-max-md){
+                display: none;
+            }
+        }
+    }
+    .shield{
+        .shield-inr{
+            position: absolute;
+            top: 66%;
+            right: 10%;
+            @include breakpoint($secreen-max-md){
+                display: none;
+            }
+        }
+    }
+    .cubr-otr{
+        .cube{
+            position: absolute;
+            top: 66%;
+            left: 3%; 
+            @include breakpoint($secreen-max-md){
+                display: none;
+            }
+        }
+    }
+    background-color: $black-00;
+    .container-fluid{
+        @include breakpoint($secreen-max-sm){
+            padding: 0px 20px ;
+        }
+        .row-custom{
+            overflow: hidden;
+            justify-content: space-between;
+            padding-top: 112px;
+            gap: 50px 0px;
+            @include breakpoint($secreen-max-sm){
+                padding-top: 56px;
+                justify-content: center;
+                
+            }
+           
+            .foot-otr{
+                z-index: 1;
+                @include breakpoint($secreen-max-sm){
+                    text-align: center;
+                }
+                .foot-inr{
+                    margin-left: 45px;
+                    @include breakpoint($secreen-max-md){
+                        margin-left: 0px;
+                    }
+                    @include breakpoint($secreen-lg){
+                        margin-left: 0px;
+                    }
+                    .otr-logo{
+                        .inr-logo{
+                          
+                        }
+                       
+                    }
+                    .head-s{
+                        color: $White-75;
+                        padding: 24px 0px;
+                    }
+                    .ul-social{
+                        display: flex;
+                        gap: 10px 14px;
+                        flex-wrap: wrap;
+                        @include breakpoint($secreen-max-md){
+                            justify-content: center;
+                            text-align: center;
+                        }
+                        .li-social{
+                            // &:not(:last-child){
+                            // margin-right: 24px;
+                            // }
+                            .a-social{
+                                width: 50px;
+                                height: 50px;
+                                background-color: #FFFFFF;
+                                border-radius: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                transition: .4s;
+                               
+                                &:hover{
+                                    background-color: #F9C80E;
+                                    .icon-social{
+                                        color: white;
+                                    }
+                                }
+                                .icon-social{
+                                    font-size: 22px;
+                                    color: #000000;
+                                    transition: .4s;
+                                }
+                            }
+                        }
+                    }
+                    .head-3{
+                        color: $White;
+                        margin: 36px 0px 24px 0px;
+                    }
+                    .address-otr{
+                        display: flex;
+                        justify-content: space-between;
+                        @include breakpoint($secreen-xs){
+                            flex-direction: column;
+                            gap: 20px 0px;
+                        }
+                        .em-otr{
+                            width: 100%;
+                            @include breakpoint($secreen-md){
+                                margin-left: 70px;
+                            }
+                            .email{
+                                padding: 13px 24px;
+                                width: 100%;
+                                border-radius: 4px;
+                                background: rgba(255, 255, 255, 0.1);
+                                border: 1px solid transparent;
+                                color: white;
+                                &:focus {
+                                    box-shadow: none;
+                                    outline: none;
+                                }
+                            }
+                        }
+                        .adress-btn{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            .ad-inr-btn{
+                                @include breakpoint($secreen-xs){
+                                    width: 100%;
+                                }
+                             
+                            }
+                        }
+                    }
+                }
+            }
+            .foot-otr1{
+                z-index: 1;
+                .foot-inr1{
+                    .trend-h3{
+                        color: #FFFFFF;
+                       
+                    }
+                    .img-otr-trend{
+                        margin: 21px 0px;
+                       .ul-img{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 12px;
+                        padding: 12px 0px;
+                        @include breakpoint($secreen-max-md){
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .li-img{
+                            // &:not(:last-child){
+                            //     margin-right: 13px;
+                            // }
+                            .inr-trend{
+                                // margin: 24px 0px 36px 0px;
+                                height: 82px;
+                                width: 82px;
+                               
+                            }
+                        }
+                       }
+                       
+                    }
+                    .trend-row{
+                        margin-bottom: 128px;
+                        gap: 20px 0px;
+                        @include breakpoint($secreen-max-md){
+                            margin-bottom: 72px;
+                        }
+                        .trend-inr{
+                           
+                            .he-3{
+                                
+                                color: #FFFFFF;
+                                margin-bottom: 16px;
+                            }
+                            .ul-foot{
+                                .li-foot{
+                                    &:not(:last-child){
+                                        margin-bottom: 8px;
+                                    }
+                                    .a-foot{
+                                        color: rgba(255, 255, 255, 0.75);
+                                        transition: .4s;
+                                        &:hover{
+                                            color: #F9C80E;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+           
+        }
+    }
+    .footer-lower{
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 24px 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        @include breakpoint($secreen-max-sm){
+            flex-direction: column;
+        }
+        .copy-right{
+            display: flex;
+            @include breakpoint($secreen-xs){
+                flex-direction: column;
+            }
+            .copy-p{
+                font-size: 16px;
+                line-height: 28px;
+                color: rgba(255, 255, 255, 0.75);
+                .a-copy{
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+            
+        }
+        .privacy{
+            display: flex;
+            .pri-p{
+                font-size: 16px;
+                line-height: 28px;
+                color: rgba(255, 255, 255, 0.75);
+                .pri-a{
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #F9C80E;
+                }
+            }
+           
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
